@@ -1,0 +1,86 @@
+CREATE TABLE milktea(
+ id INT PRIMARY KEY,
+ MilkteaID VARCHAR(50),
+ MilkteaName VARCHAR(50)
+);
+
+CREATE TABLE customer(
+ id INT PRIMARY KEY,
+ CustomerID VARCHAR(50),
+ CustomerName VARCHAR(50)
+);
+
+CREATE TABLE flavor(
+ id INT PRIMARY KEY,
+ FlavorID VARCHAR(50),
+ FlavorName VARCHAR(50)
+);
+
+
+CREATE TABLE staff(
+ id INT PRIMARY KEY,
+ StaffID VARCHAR(50),
+ StaffName VARCHAR(50)
+);
+
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    OrderID VARCHAR(50),
+    CustomerID VARCHAR(50),
+    MilkteaID VARCHAR(50),
+    FlavorID VARCHAR(50),
+    StaffID VARCHAR(50),
+    Quantity INT
+);
+
+
+INSERT INTO customer(id, custuomerID,CustomerName)
+VALUES ('1','C001','Say');
+
+INSERT INTO customer(id, customerID,CustomerName)
+VALUES ('2','C002','Sheena Jane');
+
+INSERT INTO flavor(id, flavorID,FlavorName)
+VALUES ('1','F001','cookies & cream');
+
+INSERT INTO flavor(id, flavorID,FlavorName)
+VALUES ('2','F002','okinawa');
+
+INSERT INTO milktea(id, milkteaID,milkteaName)
+VALUES ('1','MT001','Classic milktea');
+
+INSERT INTO milktea(id, milkteaID,milkteaName)
+VALUES ('2','MT002','taro milktea');
+
+INSERT INTO orders(OrderID, CustomerID, MilkteaID, FlavorID, StaffID, Quantity)
+VALUES ('1','C001','MT001','F001','SOO1','1');
+;
+
+INSERT INTO orders(OrderID, CustomerID, MilkteaID, FlavorID, StaffID, Quantity)
+VALUES ('2','C002','MT002','F002','SOO2','2');
+;
+
+INSERT INTO staff(id, StaffID,StaffName)
+VALUES ('1','S001','Judy Ann');
+;
+
+INSERT INTO staff(id, StaffID,StaffName)
+VALUES ('2','S002','Paul Yuan');
+;
+
+ALTER TABLE customer ADD Username VARCHAR(50);
+ALTER TABLE customer ADD password VARCHAR(50);
+
+UPDATE;
+
+UPDATE customer SET username='yas' 
+WHERE customer_ID='C001'
+UPDATE customer SET PASSWORD='12345' 
+WHERE customer_ID='C001'
+UPDATE customer SET username='jane' 
+WHERE customer_ID='C002'
+UPDATE customer SET PASSWORD='02188' 
+WHERE customer_ID='C002'
+
+
+

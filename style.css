@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e8,
+        #ffb6d9,
+        #ffcce6
+    );
+}
+
+/* LOGIN CONTAINER */
+.container {
+    width: 400px;
+
+    padding: 40px 35px;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(185, 70, 120, 0.20);
+}
+
+/* MILK TEA LOGO */
+.logo {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffe1ee;
+
+    border-radius: 50%;
+
+    font-size: 42px;
+}
+
+/* TITLE */
+h1 {
+    font-family: 'Pacifico', cursive;
+
+    font-size: 38px;
+
+    color: #d94f8a;
+
+    margin-bottom: 5px;
+}
+
+/* SUBTITLE */
+.subtitle {
+    color: #9b7184;
+
+    font-size: 13px;
+
+    margin-bottom: 30px;
+}
+
+/* INPUT GROUP */
+.input-group {
+    text-align: left;
+
+    margin-bottom: 18px;
+}
+
+/* LABEL */
+.input-group label {
+    display: block;
+
+    color: #7d4b61;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+/* INPUT */
+.input-group input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 2px solid #f5c4d8;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    background: #fffafd;
+
+    color: #5f3a4b;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+/* PLACEHOLDER */
+.input-group input::placeholder {
+    color: #c7a3b3;
+}
+
+/* INPUT FOCUS */
+.input-group input:focus {
+    border-color: #df6b9d;
+
+    box-shadow:
+        0 0 0 3px rgba(223, 107, 157, 0.12);
+}
+
+/* SHOW PASSWORD */
+.show-password {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 5px 0 22px;
+
+    text-align: left;
+}
+
+/* CHECKBOX */
+.show-password input {
+    width: 16px;
+    height: 16px;
+
+    accent-color: #d94f8a;
+
+    cursor: pointer;
+}
+
+/* CHECKBOX LABEL */
+.show-password label {
+    color: #8b6475;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+/* LOGIN BUTTON */
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #e85d9a,
+        #d94787
+    );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(217, 71, 135, 0.25);
+
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(217, 71, 135, 0.35);
+}
+
+/* BUTTON CLICK */
+button:active {
+    transform: translateY(0);
+}
+
+/* SIGN UP */
+.signup {
+    margin-top: 25px;
+
+    color: #9b7184;
+
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+
+    .container {
+        width: 90%;
+
+        padding: 35px 25px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+}
